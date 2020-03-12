@@ -1,4 +1,4 @@
-import org.sun.Sun
+import org.sun.SpringBootHelloWorld
 def call(String str) {
     return new SpringBootHelloWorld(str)
 }
