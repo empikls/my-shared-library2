@@ -1,7 +1,7 @@
 package org.sun
 import org.jenkinsci.plugins.pipeline.modeldefinition.Utils
 
-class Sun implements Serializable {
+class SpringBootHelloWorld implements Serializable {
 
     String stageName
     String nameSpace
