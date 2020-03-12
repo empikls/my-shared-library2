@@ -16,7 +16,7 @@ class SpringBootHelloWorld implements Serializable {
         return yamlFilePath.split('/')[1].split(/\./)[0]
     }
 
-    Sun(String yamlFilePath) {
+    SpringBootHelloWorld(String yamlFilePath) {
         stageName = yamlFilePath
     }
 
