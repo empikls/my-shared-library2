@@ -4,8 +4,8 @@ def call(String podLabel, Closure code) { podTemplate(
         label: podLabel,
         containers: [
                 containerTemplate(
-                        name: 'nodejs',
-                        image: 'node:latest',
+                        name: 'maven',
+                        image: 'maven:latest',
                         ttyEnabled: true,
                         command: 'cat'),
                 containerTemplate(
