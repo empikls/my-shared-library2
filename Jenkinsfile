@@ -1,6 +1,6 @@
 #!groovy
 
-def lib = library identifier: 'my-shared-library@master', retriever: modernSCM(github(repository: 'my-shared-library2', repoOwner: 'empikls'))
+def lib = library identifier: 'my-shared-library2@master', retriever: modernSCM(github(repository: 'my-shared-library2', repoOwner: 'empikls'))
 
 def podLabel = "label2"
 
@@ -23,7 +23,7 @@ helmTemplate(podLabel) {
     List stages = [] 
 
     yamlFilePathList.each {
-        stages.add( sunClassLoad(it) )
+        stages.add( SpringBootHelloWorldClassLoad(it) )
     }
 
 
