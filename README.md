@@ -1,1 +1,1 @@
-# my-shared-library2
+# my-shared-library
