@@ -1,6 +1,6 @@
 def call(String namespace, String releaseName, String valuesFile, String imageTag) {
     sh """
-            helm upgrade --dry-run --debug \
+            helm --dry-run --debug \
             --install $releaseName \
             --namespace $namespace \
             --force \
