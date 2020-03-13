@@ -1,7 +1,6 @@
 def call(String namespace, String releaseName, String valuesFile, String imageTag) {
     sh """
-            helm upgrade --debug \
-            --install $releaseName \
+            helm install $releaseName \
             --namespace $namespace \
             --force \
             --wait \
