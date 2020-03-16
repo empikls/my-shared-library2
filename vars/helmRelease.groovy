@@ -2,7 +2,6 @@ def call(String namespace, String releaseName, String valuesFile, String imageTa
     sh """
             helm install $releaseName \
             --namespace $namespace \
-            --force \
             --wait \
             --values $valuesFile ${imageTag}/javawebapp \
             --set-string image.tag=$imageTag
